@@ -1,0 +1,14 @@
+.topbar {
+  padding: 1rem;
+}
+.logo h1 {
+  line-height: 1;
+  /* font-family: var(--font-title); */
+  text-transform: lowercase;
+  font-size: calc(23px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /* font-size: clamp(1rem, 2vw, 2rem); */
+}
+.logo p {
+  color: var(--color-text-secondary);
+  font-size: clamp(.8rem, 1vw, 2rem);
+}

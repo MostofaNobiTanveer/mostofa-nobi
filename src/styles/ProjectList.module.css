@@ -1,0 +1,129 @@
+.projects__section {
+  padding: 10rem 1rem 6rem 1rem;
+}
+.projects {
+  /* padding: 2rem 2rem; */
+  user-select: none;
+  will-change: transform;
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.projects__title {
+  /* text-transform: capitalize; */
+  font-weight: lighter;
+  color: var(--color-text);
+  font-size: clamp(3rem, 4vw, 4rem);
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.project {
+  padding: 1rem;
+  border-radius: 0.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--color-bg);
+
+  transform-origin: center;
+  /* transform: perspective(800px) rotateY(20deg); */
+  transition: 0.3s;
+  /* -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004); */
+  /* background-color: #212121; */
+  /* border: 1px solid var(--border); */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15); */
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+.project svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.project__top {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project__top > svg {
+  width: 2rem;
+  height: 2rem;
+}
+.project__links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.project__links svg:hover {
+  stroke: var(--color-text);
+}
+.project__links svg {
+  stroke: var(--color-text-secondary);
+}
+.project__body {
+  flex: 1;
+}
+.project__title {
+  color: var(--color-text);
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.project__excerpt {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  font-weight: lighter;
+}
+.project__footer {
+  color: var(--color-text);
+  font-size: 0.7rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.project__footer p {
+  color: var(--color-text);
+  font-size: 0.6rem;
+}
+
+/* .project:hover {
+  transform: perspective(800px) rotateY(0deg);
+} */
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+/* width */
+.projects::-webkit-scrollbar {
+  height: 0.7rem;
+}
+
+/* Track */
+/* .projects::-webkit-scrollbar-track {
+  background: #1b1b1b;
+} */
+
+/* Handle */
+.projects::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  /* background: rgba(0, 0, 0, 0.45); */
+  background: var(--color-text);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: rgb(60, 60, 60);
+  cursor: pointer;
+} */

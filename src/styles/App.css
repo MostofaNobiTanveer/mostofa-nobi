@@ -1,0 +1,138 @@
+/*===============================================*/
+/*================= Variables =================*/
+/*===============================================*/
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@font-face {
+  font-family: "Averta";
+  src: url("../assets/fonts/AvertaDemoPECuttedDemo-Regular.otf")
+    format("opentype");
+}
+:root {
+  --color-bg: #fff;
+  --color-black: #000;
+  --color-text: #181818;
+  --color-text-alt: #434343;
+  --color-text-secondary: #838383;
+  --border: #bebebe;
+
+  --ease: cubic-bezier(0.87, 0, 0.13, 1);
+
+  --font-title: "Righteous", cursive;
+  --font-primary: "Averta", sans-serif;
+}
+/*===============================================*/
+/*================= Initial CSS =================*/
+/*===============================================*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+  position: relative;
+}
+
+::selection {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+a,
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  text-decoration: none;
+  user-select: none;
+}
+ul {
+  list-style-type: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+.relative {
+  position: relative;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.outline {
+  color: var(--color-bg);
+  text-shadow: -1px -1px 0 var(--color-text), 1px -1px 0 var(--color-text),
+    -1px 1px 0 var(--color-text), 1px 1px 0 var(--color-text);
+}
+
+.front__page {
+  padding: 0 0 1rem 0;
+  /* overflow-x: hidden; */
+}
