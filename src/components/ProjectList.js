@@ -24,19 +24,18 @@ const projects = [
     name: 'Crowd Bird',
     excerpt:
       'This is a crowdfunding UI made using React.js, Next.js and Tailwind CSS. Its under development to be a Fullstack app.',
-    live_link: 'https://rabbi-ginnat.netlify.app/',
+    live_link: 'https://crowd-bird.vercel.app/',
     github_link: '',
     tags: ['Next.js', 'React', 'Tailwind CSS', 'Redux'],
   },
   {
     id: 4,
-    name: 'Rabbi Jinnat - Portfolio',
+    name: 'Booknow',
     excerpt:
-      'This is the portfolio of a wordpress and php developer. Made an one page web application using React.js to showcase his works.',
-    live_link: 'https://rabbi-ginnat.netlify.app/',
-    github_link:
-      'https://github.com/MostofaNobiTanveer/coursity-react-tailwind',
-    tags: ['UI', 'React', 'CSS3'],
+      'Book now is a hotel room booking web application made using React.js, Next.js, Tailwind CSS and Redux',
+    live_link: 'https://booknow.vercel.app/',
+    github_link: 'https://github.com/MostofaNobiTanveer/Booknow',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'Redux'],
   },
   {
     id: 5,
@@ -116,7 +115,11 @@ const ProjectsSlider = () => {
                       <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                     </svg>
                     <div className={classes.project__links}>
-                      <a href={live_link} target="_blank" rel="noreferrer">
+                      <a
+                        href={live_link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           role="img"
@@ -133,7 +136,11 @@ const ProjectsSlider = () => {
                           <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                       </a>
-                      <a href={github_link} target="_blank" rel="noreferrer">
+                      <a
+                        href={github_link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           role="img"

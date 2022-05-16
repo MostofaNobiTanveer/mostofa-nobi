@@ -29,7 +29,7 @@ const CircleResume = () => {
       </div>
       <button className={classes.resume__button}>
         <a
-          href="https://drive.google.com/file/d/1Ciib0FFck1MmD-UGSpNt4gL5QyIViTXh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1aVfvxg-vC7qKbrG2JyG9lS0fUB424vFB/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
